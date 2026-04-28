@@ -10,6 +10,39 @@ Matplotlib Library
 Internet Connection
 Computer / Laptop
 ```
+## Theory
+
+Sampling is the process of converting a continuous-time signal into a discrete-time signal by taking samples at regular time intervals.
+
+According to the Nyquist Sampling Theorem, the sampling frequency must be at least twice the maximum frequency of the signal to avoid distortion.
+
+---
+
+### 1. Ideal Sampling
+
+- In ideal sampling, the signal is sampled using instantaneous (zero-width) pulses.
+- Each sample represents the exact value of the signal at that instant.
+- It is a theoretical method and cannot be implemented practically.
+- No distortion occurs.
+
+---
+
+### 2. Natural Sampling
+
+- In natural sampling, the signal is multiplied with a train of pulses.
+- The top of each pulse follows the shape of the input signal.
+- It is practically possible.
+- Small distortion may occur due to finite pulse width.
+
+---
+
+### 3. Flat-top Sampling
+
+- In flat-top sampling, the sampled value is held constant for a short duration.
+- The output consists of flat-topped pulses.
+- It is widely used in digital systems.
+- It introduces distortion called aperture effect.
+  
 # Program
 ```
 import numpy as np
